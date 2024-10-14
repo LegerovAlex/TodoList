@@ -1,0 +1,49 @@
+.add-task {
+    margin-bottom: 60px;
+    
+     &-container {
+        padding: 0 15px 0 15px;
+     }
+     &__form {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+     }
+     
+     &__input {
+        padding: 16px;
+        width: 600px;
+        border: 1px solid rgb(13, 13, 13);
+        border-radius: 8px;
+        background: rgb(38, 38, 38);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 140%;
+     }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        padding: 16px;
+        border-radius: 8px;
+        background-color: rgb(30, 111, 159);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 140%;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: rgb(25, 95, 135);
+          }
+
+          &-icon {
+            display: flex;
+            align-items: center;
+          }
+    }
+
+  
+}

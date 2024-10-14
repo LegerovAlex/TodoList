@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/base/_main.scss">
+    <title>Last Todo</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header" >
+         <div class="container  header-container " >
+            <img  class="header__logo" src="/img/logo.svg" alt="logo">
+            <h1 class="header__title" >to<span class="header__title-span">do</span> </h1>   
+         </div>
+      </header>
+      <main class="main" >
+        <section class="add-task">
+          <div class="container add-task-container">
+            <form  class="add-task__form">
+              <input   class="add-task__input" type="text" name="new-task" id="new-task" placeholder="Add a new task" >
+               <button type="submit"  class="add-task__btn" >Create
+                 <span class="add-task__btn-icon" >
+                    <img src="./img/plus.svg" alt="plus">
+                  </span>
+               </button>
+            </form>
+          </div>
+        </section>
+        <section class="tasks-section" >
+           <div class="container tasks-section-container" > 
+            <div class="tasks-section__header">
+              <div class="tasks-section__created">
+                 <div class="tasks-section__created-text">Tasks</div>
+                 <div class="tasks-section__created-count">0</div>
+              </div>
+              <div class="tasks-section__completed">
+                 <div class="tasks-section__completed-text">Completed</div>
+                 <div class="tasks-section__completed-count">0 of 0</div>
+              </div>
+          </div>
+          <div  class="tasks-section__list">
+           <ul class="tasks-list">
+            
+           </ul>
+          </div>
+           </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container footer-container">
+            Product by nomorelove
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
